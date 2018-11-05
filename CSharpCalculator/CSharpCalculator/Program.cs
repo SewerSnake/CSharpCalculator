@@ -9,4 +9,9 @@ namespace CSharpCalculator
             Console.WriteLine("Hello World!");
         }
     }
+
+    class Calculator 
+    {
+        // This is our calculator class.
+    }
 }
