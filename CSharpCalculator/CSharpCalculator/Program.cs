@@ -6,7 +6,7 @@ namespace CSharpCalculator
     {
         public static void Main()
         {
-            // Calculator c = new Calculator();
+            Calculator c = new Calculator();
 
             Console.WriteLine("1. Add two numbers");
             Console.WriteLine("2. Multiply two numbers");
@@ -15,6 +15,8 @@ namespace CSharpCalculator
             Console.WriteLine("5. Clear memory");
             Console.WriteLine("6. Print calculator contents.");
             Console.WriteLine("7. Quit");
+
+            Console.WriteLine(c.SumInBetween(1, 4));
         }
     }
 
@@ -46,6 +48,17 @@ namespace CSharpCalculator
         void MultiplyNumbers()
         {
             // return FirstNumber * SecondNumber;
+        }
+
+        public int SumInBetween(int a, int b) 
+        {
+            // return sum of all number inbetween FirstNumber and SecondNumber
+            var sum = 0;
+            for (var i = a; i <= b; i++) 
+            {
+                sum += i;
+            }
+            return sum;
         }
     }
 }
