@@ -6,6 +6,8 @@ namespace CSharpCalculator
     {
         public static void Main()
         {
+            // Calculator c = new Calculator();
+
             Console.WriteLine("1. Add two numbers");
             Console.WriteLine("2. Multiply two numbers");
             Console.WriteLine("3. Sum the numbers between two numbers.");
@@ -19,21 +21,9 @@ namespace CSharpCalculator
     public class Calculator 
     {
         // properties
-        public double FirstNumber 
-        {
-            // Korta ner dessa till { get; set; } ?
-            get { return FirstNumber; }
-            set { FirstNumber = value; }
-        }
-        public double SecondNumber
-        {
-            get { return SecondNumber; }
-            set { SecondNumber = value; }
-        }
-        public int NumberInMemory {
-            get { return NumberInMemory; }
-            set { NumberInMemory = value; }
-        }
+        public int FirstNumber { get; set; }
+        public int SecondNumber { get; set; }
+        public int NumberInMemory { get; set; }
 
         // constructor - nollställer properties
         public Calculator() 
@@ -45,7 +35,7 @@ namespace CSharpCalculator
 
         public override string ToString() 
         {
-            return "First number: {FirstNumber} \n Second number: {SecondNumber} \n Number in memory: {NumberInMemory}";
+            return $"First number: {FirstNumber} \nSecond number: {SecondNumber} \nNumber in memory: {NumberInMemory}";
         }
 
         void SumNumbers()
