@@ -16,8 +16,13 @@ namespace CSharpCalculator
         }
     }
 
-    class Calculator 
+    public class Calculator 
     {
+        // properties
+        public double firstNumber;
+        public double secondNumber;
+        public int numberInMemory;
+
         void SumNumbers()
         {
             // return FirstNumber + SecondNumber;
