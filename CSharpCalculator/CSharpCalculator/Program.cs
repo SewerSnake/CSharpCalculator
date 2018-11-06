@@ -8,6 +8,7 @@ namespace CSharpCalculator
         {
             Calculator c = new Calculator();
             bool shouldStop = false;
+            int navInput = 0;
 
             while(!shouldStop)
             {
@@ -19,14 +20,10 @@ namespace CSharpCalculator
                 Console.WriteLine("6. Print calculator contents.");
                 Console.WriteLine("7. Quit");
 
-                String inputRaw = "";
                 Console.Write("Choose option: ");
+                navInput = Convert.ToInt32(Console.ReadLine());
 
-                inputRaw = Console.ReadLine();
-
-                int input = Convert.ToInt32(inputRaw);
-
-                switch (input) 
+                switch (navInput) 
                 {
                     case 1:
                         c.SumNumbers();
@@ -67,16 +64,19 @@ namespace CSharpCalculator
 
         public double SumNumbers()
         {
+            Console.WriteLine("Sum:");
             return FirstNumber + SecondNumber;
         }
 
         public double MultiplyNumbers()
         {
+            Console.WriteLine("Multiply:");
             return FirstNumber * SecondNumber;
         }
 
         public int SumInBetween(int a, int b) 
         {
+            Console.WriteLine("Sum in between:");
             // return sum of all number inbetween FirstNumber and SecondNumber
             var sum = 0;
             for (var i = a; i <= b; i++) 

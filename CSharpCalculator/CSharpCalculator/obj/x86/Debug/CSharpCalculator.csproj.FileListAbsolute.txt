@@ -4,3 +4,9 @@
 /Users/Nur/Documents/CSharp/Labbar/Lab 1/CSharpCalculator/CSharpCalculator/obj/x86/Debug/CSharpCalculator.csproj.CoreCompileInputs.cache
 /Users/Nur/Documents/CSharp/Labbar/Lab 1/CSharpCalculator/CSharpCalculator/obj/x86/Debug/CSharpCalculator.exe
 /Users/Nur/Documents/CSharp/Labbar/Lab 1/CSharpCalculator/CSharpCalculator/obj/x86/Debug/CSharpCalculator.pdb
+/Users/patrikrikamahinnenberg/Documents/C#/CSharpCalculator/CSharpCalculator/CSharpCalculator/bin/Debug/CSharpCalculator.exe
+/Users/patrikrikamahinnenberg/Documents/C#/CSharpCalculator/CSharpCalculator/CSharpCalculator/bin/Debug/CSharpCalculator.pdb
+/Users/patrikrikamahinnenberg/Documents/C#/CSharpCalculator/CSharpCalculator/CSharpCalculator/obj/x86/Debug/CSharpCalculator.csprojAssemblyReference.cache
+/Users/patrikrikamahinnenberg/Documents/C#/CSharpCalculator/CSharpCalculator/CSharpCalculator/obj/x86/Debug/CSharpCalculator.csproj.CoreCompileInputs.cache
+/Users/patrikrikamahinnenberg/Documents/C#/CSharpCalculator/CSharpCalculator/CSharpCalculator/obj/x86/Debug/CSharpCalculator.exe
+/Users/patrikrikamahinnenberg/Documents/C#/CSharpCalculator/CSharpCalculator/CSharpCalculator/obj/x86/Debug/CSharpCalculator.pdb
