@@ -21,6 +21,7 @@ namespace CSharpCalculator
         // properties
         public double FirstNumber 
         {
+            // Korta ner dessa till { get; set; } ?
             get { return FirstNumber; }
             set { FirstNumber = value; }
         }
@@ -40,6 +41,11 @@ namespace CSharpCalculator
             this.FirstNumber = 0;
             this.SecondNumber = 0;
             this.NumberInMemory = 0;
+        }
+
+        public override string ToString() 
+        {
+            return "First number: {FirstNumber} \n Second number: {SecondNumber} \n Number in memory: {NumberInMemory}";
         }
 
         void SumNumbers()
