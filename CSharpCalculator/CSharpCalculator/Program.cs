@@ -7,16 +7,41 @@ namespace CSharpCalculator
         public static void Main()
         {
             Calculator c = new Calculator();
+            bool shouldStop = false;
 
-            Console.WriteLine("1. Add two numbers");
-            Console.WriteLine("2. Multiply two numbers");
-            Console.WriteLine("3. Sum the numbers between two numbers.");
-            Console.WriteLine("4. Add number to memory");
-            Console.WriteLine("5. Clear memory");
-            Console.WriteLine("6. Print calculator contents.");
-            Console.WriteLine("7. Quit");
+            while(!shouldStop)
+            {
+                Console.WriteLine("1. Add two numbers");
+                Console.WriteLine("2. Multiply two numbers");
+                Console.WriteLine("3. Sum the numbers between two numbers.");
+                Console.WriteLine("4. Add number to memory");
+                Console.WriteLine("5. Clear memory");
+                Console.WriteLine("6. Print calculator contents.");
+                Console.WriteLine("7. Quit");
 
-            Console.WriteLine(c.SumInBetween(1, 4));
+                String inputRaw = "";
+                Console.Write("Choose option: ");
+
+                inputRaw = Console.ReadLine();
+
+                int input = Convert.ToInt32(inputRaw);
+
+                switch (input) 
+                {
+                    case 1:
+                        c.SumNumbers();
+                        break;
+                    case 2:
+                        c.MultiplyNumbers();
+                        break;
+                    case 3:
+                        c.SumInBetween(1, 4);
+                        break;
+                    case 7:
+                        shouldStop = true;
+                        break;
+                }
+            }
         }
     }
 
@@ -40,14 +65,14 @@ namespace CSharpCalculator
             return $"First number: {FirstNumber} \nSecond number: {SecondNumber} \nNumber in memory: {NumberInMemory}";
         }
 
-        void SumNumbers()
+        public double SumNumbers()
         {
-            // return FirstNumber + SecondNumber;
+            return FirstNumber + SecondNumber;
         }
 
-        void MultiplyNumbers()
+        public double MultiplyNumbers()
         {
-            // return FirstNumber * SecondNumber;
+            return FirstNumber * SecondNumber;
         }
 
         public int SumInBetween(int a, int b) 
