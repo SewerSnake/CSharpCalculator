@@ -23,6 +23,14 @@ namespace CSharpCalculator
         public double secondNumber;
         public int numberInMemory;
 
+        // constructor - nollställer properties
+        public Calculator() 
+        {
+            this.firstNumber = 0;
+            this.secondNumber = 0;
+            this.numberInMemory = 0;
+        }
+
         void SumNumbers()
         {
             // return FirstNumber + SecondNumber;
