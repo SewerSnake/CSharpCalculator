@@ -19,16 +19,27 @@ namespace CSharpCalculator
     public class Calculator 
     {
         // properties
-        public double firstNumber;
-        public double secondNumber;
-        public int numberInMemory;
+        public double FirstNumber 
+        {
+            get { return FirstNumber; }
+            set { FirstNumber = value; }
+        }
+        public double SecondNumber
+        {
+            get { return SecondNumber; }
+            set { SecondNumber = value; }
+        }
+        public int NumberInMemory {
+            get { return NumberInMemory; }
+            set { NumberInMemory = value; }
+        }
 
         // constructor - nollställer properties
         public Calculator() 
         {
-            this.firstNumber = 0;
-            this.secondNumber = 0;
-            this.numberInMemory = 0;
+            this.FirstNumber = 0;
+            this.SecondNumber = 0;
+            this.NumberInMemory = 0;
         }
 
         void SumNumbers()
