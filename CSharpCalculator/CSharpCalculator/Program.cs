@@ -36,7 +36,7 @@ namespace CSharpCalculator
                         break;
                     case 3:
                         c.GetUserInput();
-                        Console.WriteLine(c.SumInBetween(c.FirstNumber, c.SecondNumber));
+                        Console.WriteLine($"The sum of all numbers inbetween is: {c.SumInBetween(c.FirstNumber, c.SecondNumber)}");
                         break;
                     case 7:
                         shouldStop = true;
@@ -63,9 +63,9 @@ namespace CSharpCalculator
 
         public void GetUserInput()
         {
-            Console.WriteLine("Give first number: ");
+            Console.Write("Give first number: ");
             FirstNumber = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("Give second number: ");
+            Console.Write("Give second number: ");
             SecondNumber = Convert.ToInt32(Console.ReadLine());
         }
 
@@ -86,7 +86,6 @@ namespace CSharpCalculator
 
         public int SumInBetween(int a, int b) 
         {
-            Console.WriteLine("Sum in between:");
             var sum = 0;
             for (var i = a; i <= b; i++) 
             {
