@@ -38,6 +38,11 @@ namespace CSharpCalculator
                         c.GetUserInput();
                         Console.WriteLine($"The sum of all numbers inbetween is: {c.SumInBetween(c.FirstNumber, c.SecondNumber)}");
                         break;
+                    case 4:
+                        Console.Write("Give a number to add to memory: ");
+                        c.NumberInMemory = Convert.ToInt32(Console.ReadLine());
+                        Console.WriteLine($"in mem: {c.NumberInMemory}");
+                        break;
                     case 7:
                         shouldStop = true;
                         break;
