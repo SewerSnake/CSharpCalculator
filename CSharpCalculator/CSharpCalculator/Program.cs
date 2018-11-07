@@ -27,16 +27,15 @@ namespace CSharpCalculator
                 switch (navInput) 
                 {
                     case 1:
-                        c.SumNumbers();
+                        c.GetUserInput();
+                        Console.WriteLine($"The sum is: {c.SumNumbers()}");
                         break;
                     case 2:
-                        c.MultiplyNumbers();
+                        c.GetUserInput();
+                        Console.WriteLine($"The product is: {c.MultiplyNumbers()}");
                         break;
                     case 3:
-                        Console.WriteLine("Give first number: ");
-                        c.FirstNumber = Convert.ToInt32(Console.ReadLine());
-                        Console.WriteLine("Give second number: ");
-                        c.SecondNumber = Convert.ToInt32(Console.ReadLine());
+                        c.GetUserInput();
                         Console.WriteLine(c.SumInBetween(c.FirstNumber, c.SecondNumber));
                         break;
                     case 7:
@@ -62,6 +61,14 @@ namespace CSharpCalculator
             this.NumberInMemory = 0;
         }
 
+        public void GetUserInput()
+        {
+            Console.WriteLine("Give first number: ");
+            FirstNumber = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Give second number: ");
+            SecondNumber = Convert.ToInt32(Console.ReadLine());
+        }
+
         public override string ToString() 
         {
             return $"First number: {FirstNumber} \nSecond number: {SecondNumber} \nNumber in memory: {NumberInMemory}";
@@ -69,13 +76,11 @@ namespace CSharpCalculator
 
         public double SumNumbers()
         {
-            Console.WriteLine("Sum:");
             return FirstNumber + SecondNumber;
         }
 
         public double MultiplyNumbers()
         {
-            Console.WriteLine("Multiply:");
             return FirstNumber * SecondNumber;
         }
 
