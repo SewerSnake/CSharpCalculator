@@ -12,6 +12,7 @@ namespace CSharpCalculator
 
             while(!shouldStop)
             {
+                Console.WriteLine("- - - - - - - -");
                 Console.WriteLine("1. Add two numbers");
                 Console.WriteLine("2. Multiply two numbers");
                 Console.WriteLine("3. Sum the numbers between two numbers.");
@@ -32,7 +33,11 @@ namespace CSharpCalculator
                         c.MultiplyNumbers();
                         break;
                     case 3:
-                        c.SumInBetween(1, 4);
+                        Console.WriteLine("Give first number: ");
+                        c.FirstNumber = Convert.ToInt32(Console.ReadLine());
+                        Console.WriteLine("Give second number: ");
+                        c.SecondNumber = Convert.ToInt32(Console.ReadLine());
+                        Console.WriteLine(c.SumInBetween(c.FirstNumber, c.SecondNumber));
                         break;
                     case 7:
                         shouldStop = true;
@@ -77,7 +82,6 @@ namespace CSharpCalculator
         public int SumInBetween(int a, int b) 
         {
             Console.WriteLine("Sum in between:");
-            // return sum of all number inbetween FirstNumber and SecondNumber
             var sum = 0;
             for (var i = a; i <= b; i++) 
             {
