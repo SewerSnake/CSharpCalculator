@@ -1,4 +1,5 @@
 ﻿using System;
+using System.ComponentModel.Design;
 
 namespace CSharpCalculator
 {
@@ -12,14 +13,8 @@ namespace CSharpCalculator
 
             while(!shouldStop)
             {
-                Console.WriteLine("- - - - - - - -");
-                Console.WriteLine("1. Add two numbers");
-                Console.WriteLine("2. Multiply two numbers");
-                Console.WriteLine("3. Sum the numbers between two numbers.");
-                Console.WriteLine("4. Add number to memory");
-                Console.WriteLine("5. Clear memory");
-                Console.WriteLine("6. Print calculator contents.");
-                Console.WriteLine("7. Quit");
+
+                c.menu();
 
                 Console.Write("Choose option: ");
                 navInput = Convert.ToInt32(Console.ReadLine());
@@ -64,6 +59,18 @@ namespace CSharpCalculator
             this.FirstNumber = 0;
             this.SecondNumber = 0;
             this.NumberInMemory = 0;
+        }
+
+        public void menu()
+        {
+            Console.WriteLine("- - - - - - - -");
+            Console.WriteLine("1. Add two numbers");
+            Console.WriteLine("2. Multiply two numbers");
+            Console.WriteLine("3. Sum the numbers between two numbers.");
+            Console.WriteLine("4. Add number to memory");
+            Console.WriteLine("5. Clear memory");
+            Console.WriteLine("6. Print calculator contents.");
+            Console.WriteLine("7. Quit");
         }
 
         public void GetUserInput()
