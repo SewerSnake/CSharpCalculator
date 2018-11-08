@@ -14,10 +14,10 @@ namespace CSharpCalculator
             while(!shouldStop)
             {
 
-                c.menu();
+                navInput = c.menu();
 
-                Console.Write("Choose option: ");
-                navInput = Convert.ToInt32(Console.ReadLine());
+                //Console.Write("Choose option: ");
+                //navInput = Convert.ToInt32(Console.ReadLine());
 
                 switch (navInput) 
                 {
@@ -61,7 +61,7 @@ namespace CSharpCalculator
             this.NumberInMemory = 0;
         }
 
-        public void menu()
+        public int menu()
         {
             Console.WriteLine("- - - - - - - -");
             Console.WriteLine("1. Add two numbers");
@@ -71,6 +71,9 @@ namespace CSharpCalculator
             Console.WriteLine("5. Clear memory");
             Console.WriteLine("6. Print calculator contents.");
             Console.WriteLine("7. Quit");
+
+            Console.Write("Choose option: ");
+            return Convert.ToInt32(Console.ReadLine());
         }
 
         public void GetUserInput()
