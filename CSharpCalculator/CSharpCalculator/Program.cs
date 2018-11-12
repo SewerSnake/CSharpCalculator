@@ -45,7 +45,6 @@ namespace CSharpCalculator
                     case 7:
                         Console.WriteLine("Goodbye!");
                         shouldStop = true;
-                        Console.WriteLine("Goodbye!");
                         break;
                 }
             }
