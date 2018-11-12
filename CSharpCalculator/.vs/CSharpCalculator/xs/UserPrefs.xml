@@ -1,7 +1,7 @@
 ﻿<Properties StartupConfiguration="{123EEE16-D362-4C96-BA17-2A0CC1D37948}|Default">
   <MonoDevelop.Ide.Workbench ActiveDocument="CSharpCalculator/Program.cs">
     <Files>
-      <File FileName="CSharpCalculator/Program.cs" Line="1" Column="1" />
+      <File FileName="CSharpCalculator/Program.cs" Line="26" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />

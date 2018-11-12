@@ -14,10 +14,7 @@ namespace CSharpCalculator
             while(!shouldStop)
             {
 
-                navInput = c.menu();
-
-                //Console.Write("Choose option: ");
-                //navInput = Convert.ToInt32(Console.ReadLine());
+                navInput = c.Menu();
 
                 switch (navInput) 
                 {
@@ -42,7 +39,11 @@ namespace CSharpCalculator
                         c.NumberInMemory = 0;
                         Console.WriteLine("Number in memory cleared.");
                         break;
+                    case 6:
+                        Console.WriteLine($"The number in memory is: {c.NumberInMemory}");
+                        break;
                     case 7:
+                        Console.WriteLine("Goodbye!");
                         shouldStop = true;
                         break;
                 }
@@ -65,7 +66,7 @@ namespace CSharpCalculator
             this.NumberInMemory = 0;
         }
 
-        public int menu()
+        public int Menu()
         {
             Console.WriteLine("- - - - - - - -");
             Console.WriteLine("1. Add two numbers");
