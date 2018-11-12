@@ -38,6 +38,10 @@ namespace CSharpCalculator
                         c.NumberInMemory = Convert.ToInt32(Console.ReadLine());
                         Console.WriteLine($"in mem: {c.NumberInMemory}");
                         break;
+                    case 5:
+                        c.NumberInMemory = 0;
+                        Console.WriteLine("Number in memory cleared.");
+                        break;
                     case 7:
                         shouldStop = true;
                         break;
