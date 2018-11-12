@@ -44,6 +44,7 @@ namespace CSharpCalculator
                         break;
                     case 7:
                         shouldStop = true;
+                        Console.WriteLine("Goodbye!");
                         break;
                 }
             }
@@ -79,6 +80,7 @@ namespace CSharpCalculator
             Console.Write("Choose option: ");
             return Convert.ToInt32(Console.ReadLine());
         }
+
 
         public void GetUserInput()
         {
